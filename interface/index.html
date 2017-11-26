@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>Drinks Mixer</title>
+	    <script type="text/javascript">
+
+    var i = 0;
+
+    function incNumber(item) {
+        if (i < 10) {
+            i++;
+        } else if (i = 10) {
+            i = 0;
+        }
+        document.getElementById(item).value = i;
+    }
+
+    function decNumber() {
+        if (i > 0) {
+            --i;
+        } else if (i = 0) {
+            i = 10;
+        }
+        document.getElementById("item1").value = i;
+    }
+    </script>
+</head>
+
+<body>
+	<form>
+	<ul>
+		<li>Item 1 
+			<input type="button" value="-" id="dec" onclick="decNumber('item1')"/>
+			<input type="number" value="0" id="item1" min=0 max=5> 
+			<input type="button" value="+" id="inc" onclick="incNumber('item1')"/>
+		</li>
+		<li>Item 1
+                        <input type="button" value="-" id="dec" onclick="decNumber('item2')"/>
+                        <input type="number" value="0" id="item2" min=0 max=5>
+                        <input type="button" value="+" id="inc" onclick="incNumber('item2')"/>
+                </li>
+	</ul>
+	<input type=Submit value="Pour">
+	</form>
+</body>
+

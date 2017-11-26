@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/daz/Source/drinks_dispenser/drinks_dispenser.sch</source>
+    <date>Sat 21 Oct 2017 22:01:23 BST</date>
+    <tool>Eeschema 4.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>drinks_dispenser.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>MCP23017</value>
+      <footprint>Housings_DIP:DIP-28_W7.62mm_Socket</footprint>
+      <libsource lib="microchip" part="MCP23017"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59EA8A0B</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistors_THT:R_Axial_Power_L20.0mm_W6.4mm_P25.40mm</footprint>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59EA8C9B</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>TB6612FNG_BREAKOUT</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x15_Pitch2.54mm</footprint>
+      <libsource lib="misc" part="TB6612FNG_BREAKOUT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59EA8E6F</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>TB6612FNG_BREAKOUT</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x15_Pitch2.54mm</footprint>
+      <libsource lib="misc" part="TB6612FNG_BREAKOUT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59EA9085</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>TB6612FNG_BREAKOUT</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x15_Pitch2.54mm</footprint>
+      <libsource lib="misc" part="TB6612FNG_BREAKOUT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59EA9101</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>TB6612FNG_BREAKOUT</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x15_Pitch2.54mm</footprint>
+      <libsource lib="misc" part="TB6612FNG_BREAKOUT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59EBAAFC</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>i2c</value>
+      <footprint>Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_4pol</footprint>
+      <libsource lib="conn" part="Screw_Terminal_1x04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59EBB322</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>Motor 3</value>
+      <footprint>Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol</footprint>
+      <libsource lib="conn" part="Screw_Terminal_1x02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59EBB76D</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Motor 4</value>
+      <footprint>Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol</footprint>
+      <libsource lib="conn" part="Screw_Terminal_1x02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59EBBA7B</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>Motor 1</value>
+      <footprint>Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol</footprint>
+      <libsource lib="conn" part="Screw_Terminal_1x02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59EBBD8A</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Motor 2</value>
+      <footprint>Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol</footprint>
+      <libsource lib="conn" part="Screw_Terminal_1x02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59EBBD90</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>Motor 5</value>
+      <footprint>Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol</footprint>
+      <libsource lib="conn" part="Screw_Terminal_1x02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59EBBFE3</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Motor 6</value>
+      <footprint>Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol</footprint>
+      <libsource lib="conn" part="Screw_Terminal_1x02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59EBBFE9</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>Motor 7</value>
+      <footprint>Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol</footprint>
+      <libsource lib="conn" part="Screw_Terminal_1x02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59EBC164</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>Motor 8</value>
+      <footprint>Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol</footprint>
+      <libsource lib="conn" part="Screw_Terminal_1x02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59EBC16A</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="microchip" part="MCP23017">
+      <description>16-Bit I/O Expander with I²C Interface (PDIP/SOIC/SSOP)</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf</docs>
+      <footprints>
+        <fp>DIP-28_W7.62mm*</fp>
+        <fp>SOIC-28</fp>
+        <fp>SSOP-28</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP23017</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GPB0" type="BiDi"/>
+        <pin num="2" name="GPB1" type="BiDi"/>
+        <pin num="3" name="GPB2" type="BiDi"/>
+        <pin num="4" name="GPB3" type="BiDi"/>
+        <pin num="5" name="GPB4" type="BiDi"/>
+        <pin num="6" name="GPB5" type="BiDi"/>
+        <pin num="7" name="GPB6" type="BiDi"/>
+        <pin num="8" name="GPB7" type="BiDi"/>
+        <pin num="9" name="VCC" type="power_in"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="12" name="SCL" type="input"/>
+        <pin num="13" name="SDA" type="BiDi"/>
+        <pin num="15" name="A0" type="input"/>
+        <pin num="16" name="A1" type="input"/>
+        <pin num="17" name="A2" type="input"/>
+        <pin num="18" name="~RESET" type="input"/>
+        <pin num="19" name="INTB" type="output"/>
+        <pin num="20" name="INTA" type="output"/>
+        <pin num="21" name="GPA0" type="BiDi"/>
+        <pin num="22" name="GPA1" type="BiDi"/>
+        <pin num="23" name="GPA2" type="BiDi"/>
+        <pin num="24" name="GPA3" type="BiDi"/>
+        <pin num="25" name="GPA4" type="BiDi"/>
+        <pin num="26" name="GPA5" type="BiDi"/>
+        <pin num="27" name="GPA6" type="BiDi"/>
+        <pin num="28" name="GPA7" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Screw_Terminal_1x02">
+      <description>2-pin screw terminal connector</description>
+      <footprints>
+        <fp>bornier2</fp>
+        <fp>TerminalBlock*2pol</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_1x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Screw_Terminal_1x04">
+      <description>4-pin screw terminal connector</description>
+      <footprints>
+        <fp>bornier4</fp>
+        <fp>TerminalBlock*4pol</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_1x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="misc" part="TB6612FNG_BREAKOUT">
+      <description>TB6612FNG Dual Motor Driver Carrier (Pololu #713)</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TB6612FNG_BREAKOUT</field>
+      </fields>
+      <pins>
+        <pin num="~" name="AIN1" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="misc">
+      <uri>/usr/share/kicad/3rdparty/kicad-libs/misc.lib</uri>
+    </library>
+    <library logical="microchip">
+      <uri>/usr/share/kicad/library/microchip.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(U1-Pad23)">
+      <node ref="U1" pin="23"/>
+    </net>
+    <net code="2" name="Net-(U1-Pad24)">
+      <node ref="U4" pin="~"/>
+      <node ref="U1" pin="24"/>
+    </net>
+    <net code="3" name="Net-(U1-Pad22)">
+      <node ref="U1" pin="22"/>
+      <node ref="U4" pin="~"/>
+    </net>
+    <net code="4" name="Net-(U1-Pad21)">
+      <node ref="U4" pin="~"/>
+      <node ref="U1" pin="21"/>
+    </net>
+    <net code="5" name="Net-(U1-Pad8)">
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="6" name="Net-(U1-Pad25)">
+      <node ref="U1" pin="25"/>
+    </net>
+    <net code="7" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="8" name="Net-(U1-Pad7)">
+      <node ref="U3" pin="~"/>
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="9" name="Net-(U1-Pad6)">
+      <node ref="U3" pin="~"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="10" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+      <node ref="U3" pin="~"/>
+    </net>
+    <net code="11" name="Net-(U1-Pad3)">
+      <node ref="U1" pin="3"/>
+      <node ref="U2" pin="~"/>
+    </net>
+    <net code="12" name="Net-(U1-Pad2)">
+      <node ref="U2" pin="~"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="13" name="Net-(U1-Pad1)">
+      <node ref="U1" pin="1"/>
+      <node ref="U2" pin="~"/>
+    </net>
+    <net code="14" name="Net-(J4-Pad1)">
+      <node ref="U4" pin="~"/>
+      <node ref="J4" pin="1"/>
+    </net>
+    <net code="15" name="Net-(J5-Pad2)">
+      <node ref="J5" pin="2"/>
+      <node ref="U5" pin="~"/>
+    </net>
+    <net code="16" name="Net-(J9-Pad1)">
+      <node ref="J9" pin="1"/>
+      <node ref="U5" pin="~"/>
+    </net>
+    <net code="17" name="Net-(J9-Pad2)">
+      <node ref="U5" pin="~"/>
+      <node ref="J9" pin="2"/>
+    </net>
+    <net code="18" name="Net-(J4-Pad2)">
+      <node ref="U4" pin="~"/>
+      <node ref="J4" pin="2"/>
+    </net>
+    <net code="19" name="Net-(J8-Pad1)">
+      <node ref="U4" pin="~"/>
+      <node ref="J8" pin="1"/>
+    </net>
+    <net code="20" name="Net-(J8-Pad2)">
+      <node ref="J8" pin="2"/>
+      <node ref="U4" pin="~"/>
+    </net>
+    <net code="21" name="+5V">
+      <node ref="U3" pin="~"/>
+      <node ref="U2" pin="~"/>
+      <node ref="U2" pin="~"/>
+      <node ref="R1" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="U3" pin="~"/>
+      <node ref="U3" pin="~"/>
+      <node ref="U3" pin="~"/>
+      <node ref="U2" pin="~"/>
+      <node ref="U4" pin="~"/>
+      <node ref="U4" pin="~"/>
+      <node ref="U2" pin="~"/>
+      <node ref="U4" pin="~"/>
+      <node ref="U1" pin="9"/>
+      <node ref="U5" pin="~"/>
+      <node ref="U5" pin="~"/>
+      <node ref="U5" pin="~"/>
+      <node ref="U5" pin="~"/>
+      <node ref="U4" pin="~"/>
+    </net>
+    <net code="22" name="+12V">
+      <node ref="U2" pin="~"/>
+      <node ref="U4" pin="~"/>
+      <node ref="U3" pin="~"/>
+      <node ref="U5" pin="~"/>
+    </net>
+    <net code="23" name="GND">
+      <node ref="U2" pin="~"/>
+      <node ref="U2" pin="~"/>
+      <node ref="U2" pin="~"/>
+      <node ref="U1" pin="17"/>
+      <node ref="U1" pin="10"/>
+      <node ref="U5" pin="~"/>
+      <node ref="U5" pin="~"/>
+      <node ref="J1" pin="2"/>
+      <node ref="U5" pin="~"/>
+      <node ref="U1" pin="15"/>
+      <node ref="U3" pin="~"/>
+      <node ref="U1" pin="16"/>
+      <node ref="U3" pin="~"/>
+      <node ref="U4" pin="~"/>
+      <node ref="U4" pin="~"/>
+      <node ref="U4" pin="~"/>
+      <node ref="U3" pin="~"/>
+    </net>
+    <net code="24" name="Net-(U1-Pad20)">
+      <node ref="U1" pin="20"/>
+    </net>
+    <net code="25" name="Net-(U1-Pad19)">
+      <node ref="U1" pin="19"/>
+    </net>
+    <net code="26" name="/Data">
+      <node ref="U1" pin="13"/>
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="27" name="/Clock">
+      <node ref="J1" pin="3"/>
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="28" name="Net-(J5-Pad1)">
+      <node ref="U5" pin="~"/>
+      <node ref="J5" pin="1"/>
+    </net>
+    <net code="29" name="Net-(J6-Pad1)">
+      <node ref="U2" pin="~"/>
+      <node ref="J6" pin="1"/>
+    </net>
+    <net code="30" name="Net-(J6-Pad2)">
+      <node ref="U2" pin="~"/>
+      <node ref="J6" pin="2"/>
+    </net>
+    <net code="31" name="Net-(U1-Pad28)">
+      <node ref="U5" pin="~"/>
+      <node ref="U1" pin="28"/>
+    </net>
+    <net code="32" name="Net-(U1-Pad27)">
+      <node ref="U5" pin="~"/>
+      <node ref="U1" pin="27"/>
+    </net>
+    <net code="33" name="Net-(U1-Pad26)">
+      <node ref="U5" pin="~"/>
+      <node ref="U1" pin="26"/>
+    </net>
+    <net code="34" name="Net-(J3-Pad1)">
+      <node ref="J3" pin="1"/>
+      <node ref="U3" pin="~"/>
+    </net>
+    <net code="35" name="Net-(J3-Pad2)">
+      <node ref="U3" pin="~"/>
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="36" name="Net-(J7-Pad1)">
+      <node ref="J7" pin="1"/>
+      <node ref="U3" pin="~"/>
+    </net>
+    <net code="37" name="Net-(J7-Pad2)">
+      <node ref="J7" pin="2"/>
+      <node ref="U3" pin="~"/>
+    </net>
+    <net code="38" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1"/>
+      <node ref="U2" pin="~"/>
+    </net>
+    <net code="39" name="Net-(J2-Pad2)">
+      <node ref="U2" pin="~"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="40" name="Net-(R1-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="U1" pin="18"/>
+    </net>
+  </nets>
+</export>
