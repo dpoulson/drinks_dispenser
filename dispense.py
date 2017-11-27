@@ -2,6 +2,8 @@
 
 import smbus
 import time
+import requests
+
 
 #bus = smbus.SMBus(1) # Rev 2 Pi uses 1
 
@@ -12,43 +14,90 @@ OLATB  = 0x15
 GPIOA  = 0x12 # Register for inputs
 GPIOB  = 0x13
 
-empty_array = [ 0,0,0,0 ]
-test_array = [ 3,1,0,0 ]
+DATA_SIZE = 8
+INTERVAL = 1
+
+baseurl = "http://localhost:5000/"
+
+empty_array = [ 0,0,0,0,0,0,0,0 ]
+test_array = [ 3,1,0,0,2,0,1,0 ]
 
 def run_motors(selection):
     selection_retract = list(selection)
     # Prime
-    print "Prime pumps"
     prime = 0
-    for x in range (0, 4):
+    for x in range (0, DATA_SIZE):
          if selection[x] > 0:
             prime += (2**(x*2))
-    print prime
+    writei2c(prime)
     # Main pour
     while selection != empty_array:
         command = 0
-        print "Main pour"
-        for x in range (0, 4):
+        for x in range (0, DATA_SIZE):
             if selection[x] > 0:
                 command += (2**(x*2))
                 selection[x] -= 1
-        print command
-
+        writei2c(command)
     # Retract
-    print "Retract"
-    print selection_retract
     retract = 0
-    for x in range (0, 4):
+    for x in range (0, DATA_SIZE):
         if selection_retract[x] > 0:
-            print "retract %s" % x
             retract += (2**((x*2)+1))
-            print retract
-    print retract
+    writei2c(retract)
     return "Ok"
 
+def writei2c(data):
+    a = (data >> 8) & 0xff
+    b = data & 0xff
+    print "A: %s\t B: %s" % (a, b)
+    # bus.write_byte_data(DEVICE,OLATA,a)
+    # bus.write_byte_data(DEVICE,OLATB,b)
+    time.sleep(INTERVAL)
 
 
+#####
+# Open door
+print "Open door"
+url = baseurl + "servo/body/RLD/1/0"
+try:
+    r = requests.get(url)
+except:
+    print "Fail...."
+time.sleep(0.5)
+
+#####
+# Raise arm
+print "Raise drinks arm"
+url = baseurl + "servo/body/DRINK/1/0"
+try:
+    r = requests.get(url)
+except:
+    print "Fail...."
+time.sleep(2)
+
+#####
+# 
 run_motors(test_array)
+
+#####
+# Lower arm
+print "Lower drinks arm"
+url = baseurl + "servo/body/DRINK/0/0"
+try:
+    r = requests.get(url)
+except:
+    print "Fail...."
+time.sleep(2)
+
+#####
+# Close door
+print "Close door"
+url = baseurl + "servo/body/RLD/0/0"
+try:
+    r = requests.get(url)
+except:
+    print "Fail...."
+
 
 
 
