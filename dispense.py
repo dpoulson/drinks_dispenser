@@ -55,6 +55,16 @@ def writei2c(data):
     time.sleep(INTERVAL)
 
 
+# Set all GPA pins as outputs by setting
+# all bits of IODIRA and IODIRB register to 0
+#bus.write_byte_data(DEVICE,IODIRA,0x00)
+#bus.write_byte_data(DEVICE,IODIRB,0x00)
+ 
+# Set output all 7 output bits to 0
+#bus.write_byte_data(DEVICE,OLATA,0)
+#bus.write_byte_data(DEVICE,OLATB,0)
+
+
 #####
 # Open door
 print "Open door"
